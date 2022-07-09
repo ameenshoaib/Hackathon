@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="navbar__logo">GAP</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="navbar__menu">
+        <a href="/" class="navbar__link">Home</a>
+        <a href="#features" class="navbar__link">Services</a>
+        <a href="#plans" class="navbar__link">Plans</a>
+        <a href="#footer" class="navbar__link">Contact Us</a>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <div class="hero">
+      <h1 class="hero-text">GAP FITNESS</h1>
+      <p class="hero-text">Start your fitness journey with us.</p>
+      <a href="https://www.youtube.com/watch?v=43hWj8mfYGY" class="animate-hero"
+        >Click here for workouts</a
+      >
+    </div>
+
+    <!-- Features section -->
+    <div class="container-fluid features" id="features">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="features-text">Features</p>
+          <h1 class="features-head">What we provide</h1>
+          <br />
+          <p class="options">
+            <i class="fas fa-check-circle icon"></i> Group fitness classes
+          </p>
+          <p class="options">
+            <i class="fas fa-check-circle icon"></i> Zumba classes
+          </p>
+          <p class="options">
+            <i class="fas fa-check-circle icon"></i> Personal Training
+          </p>
+          <p class="options">
+            <i class="fas fa-check-circle icon"></i> Aerobics
+          </p>
+          <p class="options"><i class="fas fa-check-circle icon"></i> Yoga</p>
+          <p class="options"><i class="fas fa-check-circle icon"></i> MMA</p>
+        </div>
+        <div class="col-lg-6">
+          <div
+            id="testimonial-carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="/images/gym-person.jpg"
+                  class="d-block w-100"
+                  alt="person"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="/images/gym-2.jpg"
+                  class="d-block w-100"
+                  alt="person"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="/images/gym3.jpg"
+                  class="d-block w-100"
+                  alt="person"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              role="button"
+              data-bs-target="#testimonial-carousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              role="button"
+              data-bs-target="#testimonial-carousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plans section -->
+    <div class="memberships" id="plans">
+      <h1 class="plan-text">View Our Plans</h1>
+      <p class="membership__desc animate-membership">
+        Get started today and receive <span>25%</span> off on your first month
+      </p>
+      <div class="membership__wrapper">
+        <div class="membership__card animate-card">
+          <div class="membership__title">
+            <i class="fas fa-dumbbell card-icon"></i>
+            <h3>Starter</h3>
+          </div>
+          <div class="membership__perks">
+            <p>Get access to the entire gym</p>
+            <p><span>$29</span> per month</p>
+          </div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRgggkeUY_fQfUx87Sa_nUa924ZMcvcyZSsCrVJhTt942YSA/viewform?usp=sf_link"
+            class="sign-up"
+            >Sign Up</a
+          >
+        </div>
+        <div class="membership__card animate-card">
+          <div class="membership__title">
+            <i class="fas fa-bicycle card-icon"></i>
+            <h3>Silver</h3>
+          </div>
+          <div class="membership__perks">
+            <p>Get access to the entire gym</p>
+            <p>Group Fitness Classes</p>
+            <p><span>$49</span> per month</p>
+          </div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRgggkeUY_fQfUx87Sa_nUa924ZMcvcyZSsCrVJhTt942YSA/viewform?usp=sf_link"
+            class="sign-up"
+            >Sign Up</a
+          >
+        </div>
+        <div class="membership__card animate-card">
+          <div class="membership__title">
+            <i class="fas fa-dumbbell card-icon"></i>
+            <h3>Gold</h3>
+          </div>
+          <div class="membership__perks">
+            <p>Get access to the entire gym</p>
+            <p>Group Fitness Classes</p>
+            <p>Private Personal Training</p>
+            <p><span>$99</span> per month</p>
+          </div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeRgggkeUY_fQfUx87Sa_nUa924ZMcvcyZSsCrVJhTt942YSA/viewform?usp=sf_link"
+            class="sign-up"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <footer id="footer">
+      <p class="contact">
+        Contact us at <i class="fas fa-phone"></i><span> +91987652311</span>
+      </p>
+      <a href="/"><i class="fab fa-twitter footer-icon"></i></a>
+      <a href="/"><i class="fab fa-facebook footer-icon"></i></a>
+      <a href="/"><i class="fab fa-instagram footer-icon"></i></a>
+      <a href="/"><i class="fas fa-envelope footer-icon"></i></a>
+      <p class="copyright">© Copyright 2022 Gap Fitness.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

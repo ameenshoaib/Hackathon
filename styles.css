@@ -1,0 +1,316 @@
+* {
+  color: rgb(56, 48, 48);
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: black;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  height: 60px;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: white;
+  padding: 1.4rem;
+  transition: 0.2s ease-in;
+}
+
+.navbar__link:hover {
+  color: red;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  body.active {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .navbar__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+    position: absolute;
+    width: 100%;
+    top: -1000px;
+    transition: all 0.3s ease-out;
+  }
+
+  .navbar__menu .active {
+    top: 100%;
+    opacity: 1;
+    z-index: 99;
+    height: 100vh;
+    font-size: 1.5rem;
+    background: black;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    transform: translate(5%, 20%);
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.title {
+  background: #dbb3b3;
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("images/gymm.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero-text {
+  display: flex;
+  margin-left: 4rem;
+  padding: 1rem 0;
+  color: black;
+  padding: 5rem 0 0 0;
+}
+
+h1.hero-text {
+  font-size: clamp(5rem, 8vw, 6rem);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+p.hero-text {
+  font-size: clamp(1rem, 5vw, 2rem);
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+a.logo {
+  font-size: 2.2rem;
+  margin-left: 2rem;
+}
+
+.animate-hero {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  margin-top: 4rem;
+  margin-left: 15rem;
+}
+
+.animate-hero:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1100px) {
+  .animate-hero {
+    margin: 0 8rem;
+  }
+}
+
+/* Features section */
+.features {
+  padding: 4rem;
+}
+
+.features-text {
+  font-size: clamp(2rem, 5vw, 2rem);
+  color: red;
+  font-weight: bold;
+}
+
+.icon {
+  color: red;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.options {
+  font-size: 1.1rem;
+}
+
+.feature-img {
+  width: 90%;
+}
+
+.features h1 {
+  font-weight: bold;
+}
+
+.feat-img {
+  padding: 3rem;
+}
+
+.features {
+  padding-left: 4rem;
+  max-width: 80%;
+}
+
+/* Plans section */
+
+.memberships {
+  background-color: black;
+  text-align: center;
+  padding: 4rem;
+}
+
+.plan-text,
+.membership__desc {
+  color: #fff;
+}
+
+.memberships span {
+  color: red;
+}
+
+.membership__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership__card {
+  padding: 2rem;
+  min-height: 450px;
+  width: 325px;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.4s ease-out;
+}
+
+.membership__card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.membership__card:active {
+  background-color: rgb(218, 218, 218);
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.sign-up {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.sign-up:hover {
+  color: #fff;
+  background-color: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: red;
+}
+
+.membership__wrapper h3 {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.membership__perks span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  .membership__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership__card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Footer section */
+
+#footer {
+  text-align: center;
+  padding: 3rem;
+}
+
+.footer-icon {
+  padding: 1rem;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  color: red;
+  transition: 0.3s ease-in-out;
+}
+
+#footer span {
+  transition: 0.3s ease;
+}
+
+#footer span:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact {
+  font-size: 1.2rem;
+}
